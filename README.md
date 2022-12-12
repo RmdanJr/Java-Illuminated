@@ -1,4 +1,4 @@
-# Java-Illuminated
+# Java Illuminated, 3rd Edition Solutions
 
 ## Chapter 1   Introduction to Programming and the Java Language
 
