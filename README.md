@@ -319,18 +319,17 @@ output(sumL, sumG)
 ![166_7a](https://user-images.githubusercontent.com/51521033/207514048-22184f39-fa26-4b16-8597-fc2bd333866b.jpg)
 <br/>Answer: 6
 
-18. What is the output of this code sequence?<br/>
-![166_5a](https://user-images.githubusercontent.com/51521033/207513907-80790e99-8b98-4b7b-92cd-15a73f08047b.jpg)
-<br/>Answer: 2.0
+21. What is the output of this code sequence?<br/>
+![167_1a](https://user-images.githubusercontent.com/51521033/207547508-9407d70c-aae4-4d72-a1a2-f5a6e9c711df.jpg)
+<br/>Answer: 4.0
 
-19. What is the output of this code sequence? (You will need to actually compile this code and run it in order to have the correct output.)<br/>
-![166_6a](https://user-images.githubusercontent.com/51521033/207513987-8195ad63-c1a8-47f3-98ab-09f250eecfb2.jpg)
-<br/>Answer: 3.14159
+22. What is the output of this code sequence? (You will need to actually compile this code and run it in order to have the correct output.)<br/>
+![167_2a](https://user-images.githubusercontent.com/51521033/207547458-c139f434-c90b-4386-9524-2d86a5ed686d.jpg)
+<br/>Answer: 8
 
-20. What is the output of this code sequence?<br/>
-![166_7a](https://user-images.githubusercontent.com/51521033/207514048-22184f39-fa26-4b16-8597-fc2bd333866b.jpg)
-<br/>Answer: 6
-
+23. What is the output of this code sequence?<br/>
+![167_3a](https://user-images.githubusercontent.com/51521033/207547412-f29970bc-cf8e-4b66-b47f-d69a7c5fde32.jpg)
+<br/>Answer: 8.0
 
 ## Chapter 4   Introduction to Applets and Graphics
 
