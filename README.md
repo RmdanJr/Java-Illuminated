@@ -444,8 +444,46 @@ public class CircleInfo {
 ```
 
 59.Write a program that generates five random integers between 60 and 100 and calculates the smallest of the five numbers.
+```java
+import java.util.Random;
+
+public class MinRandomNumber {
+    public static void main(String args[]) {
+        Random rand = new Random();
+        int n = 5;
+        int lowerbound = 60;
+        int upperbound = 100;
+        int[] randomNums = new int[n];
+        int minNum = Integer.MAX_VALUE;
+        for(int i = 0; i < n; i++) {
+            randomNums[i] = lowerbound + rand.nextInt(upperbound - lowerbound);
+            minNum = Math.min(minNum, randomNums[i]);
+        }
+        System.out.println(minNum);
+    }
+}
+```
 
 60.Write a program that generates three random integers between 0 and 50, calculates the average, and prints the result.
+```java
+import java.util.Random;
+
+public class AvgRandomNumbers {
+    public static void main(String args[]) {
+        Random rand = new Random();
+        int n = 3;
+        int upperbound = 50;
+        int[] randomNums = new int[n];
+        double sum = 0;
+        for(int i = 0; i < n; i++) {
+            randomNums[i] = rand.nextInt(upperbound);
+            sum += randomNums[i];
+        }
+        double avg = sum / n;
+        System.out.println(avg);
+    }
+}
+```
 
 61.Write a program that reads two integers from the Java console: one representing the number of shots taken by a basketball player, the other representing the number of shots made by the same player.
 
