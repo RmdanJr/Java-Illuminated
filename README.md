@@ -331,6 +331,65 @@ output(sumL, sumG)
 ![167_3a](https://user-images.githubusercontent.com/51521033/207547412-f29970bc-cf8e-4b66-b47f-d69a7c5fde32.jpg)
 <br/>Answer: 8.0
 
+### Write a Short Program
+
+50.Write a program that reads two words representing passwords from the Java console and outputs the number of characters in the smaller of the two. For example, if the two words are open and sesame, then the output should be 4, the length of the shorter word, open.
+```java
+```
+
+51.Write a program that reads a name that represents a domain name from the Java console. Your program should then concatenate that name with www. and .com in order to form an Internet domain name and output the result. For instance, if the name entered by the user is yahoo, then the output will be www.yahoo.com.
+```java
+```
+
+52.Write a program that reads a word from the Java console. Your program should then output the same word, output the word in uppercase letters only, output that word in lowercase letters only, and then, at the end, output the original word.
+```java
+```
+
+53.Write a program that generates two random numbers between 0 and 100 and prints the smaller of the two numbers.
+```java
+```
+
+54.Write a program that takes a double as an input from the Java console, then computes and outputs the cube of that number.
+```java
+```
+
+55.Write a program that reads a file name from a dialog box. You should expect that the file name has one. (dot) character in it, separating the file name from the file extension. Retrieve the file extension and output it. For instance, if the user inputs index.html, you should output html; if the user inputs MyClass.java, you should output java.
+
+56.Write a program that reads a full name (first name and last name) from a dialog box; you should expect the first name and the last name to be separated by a space. Retrieve the first name and output it.
+
+### Programming Projects
+
+57.Write a program that reads three integer values from the Java console representing, respectively, a number of quarters, dimes, and nickels. Convert the total coin amount to dollars and output the result with a dollar notation.
+```java
+import java.util.Scanner;
+
+public class DollarsCalc {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int quarters = in.nextInt();
+        int dimes = in.nextInt();
+        int nickels = in.nextInt();
+        int cents = quarters * 25 + dimes * 10 + nickels * 5;
+        double dollars = cents / 100.0;
+        System.out.printf("$%.2f", dollars);
+    }
+}
+```
+
+58.Write a program that reads from the Java console the radius of a circle. Calculate and output the area and the perimeter of that circle. You can use the following formulas: area = π* r2, perimeter = 2 * π* r
+```java
+import java.util.Scanner;
+
+public class CircleInfo {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        double radius = in.nextDouble();
+        double area = Math.PI * Math.pow(radius, 2);
+        double perimeter = 2 * Math.PI * radius;
+        System.out.printf("Area: %.2f%nPerimeter: %.2f", area, perimeter);
+    }
+}
+```
 ## Chapter 4   Introduction to Applets and Graphics
 
 ## Chapter 5   Flow of Control, Part 1: Selection
