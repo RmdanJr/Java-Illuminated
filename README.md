@@ -335,22 +335,74 @@ output(sumL, sumG)
 
 50.Write a program that reads two words representing passwords from the Java console and outputs the number of characters in the smaller of the two. For example, if the two words are open and sesame, then the output should be 4, the length of the shorter word, open.
 ```java
+import java.util.Scanner;
+
+public class SmallestPassword {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        String password1 = in.next(), password2 = in.next();
+        int minLen = Math.min(password1.length(), password2.length());
+        System.out.println(minLen);
+    }
+}
 ```
 
 51.Write a program that reads a name that represents a domain name from the Java console. Your program should then concatenate that name with www. and .com in order to form an Internet domain name and output the result. For instance, if the name entered by the user is yahoo, then the output will be www.yahoo.com.
 ```java
+import java.util.Scanner;
+
+public class DomainGenerator {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        String domainName = in.next();
+        String domain = "www." + domainName + ".com";
+        System.out.println(domain);
+    }
+}
 ```
 
 52.Write a program that reads a word from the Java console. Your program should then output the same word, output the word in uppercase letters only, output that word in lowercase letters only, and then, at the end, output the original word.
 ```java
+import java.util.Scanner;
+
+public class WordCases {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        String word = in.next();
+        System.out.println("Lowercase Version: " + word.toLowerCase());
+        System.out.println("Uppercase Version: " + word.toUpperCase());
+        System.out.println("Original Word: " + word);
+    }
+}
 ```
 
 53.Write a program that generates two random numbers between 0 and 100 and prints the smaller of the two numbers.
 ```java
+import java.util.Random;
+
+public class MinRandomNumber {
+    public static void main(String args[]) {
+        Random rand = new Random();
+        int upperbound = 100;
+        int randNum1 = rand.nextInt(upperbound);
+        int randNum2 = rand.nextInt(upperbound);
+        int minNum = Math.min(randNum1, randNum2);
+        System.out.println(minNum);
+    }
+}
 ```
 
 54.Write a program that takes a double as an input from the Java console, then computes and outputs the cube of that number.
 ```java
+import java.util.Scanner;
+
+public class NumberCube {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        double num = in.nextDouble();
+        System.out.println(Math.pow(num, 3));
+    }
+}
 ```
 
 55.Write a program that reads a file name from a dialog box. You should expect that the file name has one. (dot) character in it, separating the file name from the file extension. Retrieve the file extension and output it. For instance, if the user inputs index.html, you should output html; if the user inputs MyClass.java, you should output java.
