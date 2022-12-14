@@ -11,8 +11,7 @@
 
 2. Which one of these is not an application?
 - [ ] Word
-- [ ] Internet Explorer![166_1a](https://user-images.githubusercontent.com/51521033/207513185-878637b4-6ac8-4319-ac3c-aed880ced46f.jpg)
-
+- [ ] Internet Explorer
 - [x] Linux
 - [ ] Excel
 
