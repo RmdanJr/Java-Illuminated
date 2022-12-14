@@ -485,10 +485,20 @@ public class AvgRandomNumbers {
 ```
 
 61.Write a program that reads two integers from the Java console: one representing the number of shots taken by a basketball player, the other representing the number of shots made by the same player.
-
-
 Calculate the shooting percentage and output it with the percent notation.
+```java
+import java.util.Scanner;
 
+public class ShootingPercentage {
+    public static void main(String args[]) {
+      Scanner in = new Scanner(System.in);
+      int shotsTaken = in.nextInt();
+      int shotsMade = in.nextInt();
+      double percentage = ((double)shotsMade / (shotsMade + shotsTaken)) * 100;
+      System.out.printf("%.2f%%", percentage);
+    }
+}
+```
 62.Write a program that takes three double numbers from the Java console representing, respectively, the three coefficients a, b, and c of a quadratic equation. Solve the equation using the following formulas:
 
 x1 = ( —b + square root (b2 —4 ac)) / (2a)
@@ -504,6 +514,29 @@ a = 0.5, b = 0.5, c = 0.125
 a = 1.0, b = 3.0, c = 10.0
 
 Discuss the results for each program run, in particular what happens in the last case.
+```java
+import java.util.Scanner;
+
+public class QuadraticEquation {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        double a = in.nextDouble(), b = in.nextDouble(), c = in.nextDouble();
+        try {
+            double m = Math.sqrt(Math.pow(b, 2) - 4 * a * c);
+            if(Double.isNaN(m) || a == 0) {
+                throw new ArithmeticException("There's no solution in real numbers.");
+            }
+            double x1 = (-b + m) / (2 * a);
+            double x2 = (-b - m) / (2 * a);
+            System.out.printf("possible x values: %.2f, %.2f", x1, x2);
+        }
+        catch(ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+```
+Answer: 
 
 63.Write a program that takes two numbers from the Java console representing, respectively, an investment and an interest rate (you will expect the user to enter a number such as .065 for the interest rate, representing a 6.5% interest rate). Your program should calculate and output (in $ notation) the future value of the investment in 5,10, and 20 years using the following formula:
 
