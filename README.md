@@ -442,6 +442,50 @@ public class CircleInfo {
     }
 }
 ```
+
+59.Write a program that generates five random integers between 60 and 100 and calculates the smallest of the five numbers.
+
+60.Write a program that generates three random integers between 0 and 50, calculates the average, and prints the result.
+
+61.Write a program that reads two integers from the Java console: one representing the number of shots taken by a basketball player, the other representing the number of shots made by the same player.
+
+
+Calculate the shooting percentage and output it with the percent notation.
+
+62.Write a program that takes three double numbers from the Java console representing, respectively, the three coefficients a, b, and c of a quadratic equation. Solve the equation using the following formulas:
+
+x1 = ( —b + square root (b2 —4 ac)) / (2a)
+
+x2 = (—b —square root (b2 —4 ac)) / (2a)
+
+Run your program on the following sample values:
+
+a = 1.0, b = 3.0, c = 2.0
+
+a = 0.5, b = 0.5, c = 0.125
+
+a = 1.0, b = 3.0, c = 10.0
+
+Discuss the results for each program run, in particular what happens in the last case.
+
+63.Write a program that takes two numbers from the Java console representing, respectively, an investment and an interest rate (you will expect the user to enter a number such as .065 for the interest rate, representing a 6.5% interest rate). Your program should calculate and output (in $ notation) the future value of the investment in 5,10, and 20 years using the following formula:
+
+future value = investment * ( 1 + interest rate )year
+
+We will assume that the interest rate is an annual rate and is compounded annually.
+
+64.Write a program that reads from the Java console the (x,y) coordinates for two points in the plane. You can assume that all numbers are integers. Using the Point class from Java (you may need to look it up on the Web), instantiate two Point objects with your input data, then output the data for both Point objects.
+
+65.Write a program that reads a char from the Java console. Look up the Character class on the Web, in particular the method getNumeric-Value. Using the getNumericValue method, find the corresponding Unicode encoding number and output the character along with its corresponding Unicode value. Find all the Unicode values for characters a to z and A to Z.
+
+
+66.Write a program that reads a telephone number from a dialog box; you should assume that the number is in this format: nnn-nnn-nnnn. You should output this same telephone number but with spaces instead of dashes, that is: nnn nnn nnnn.
+
+67.Write a program that reads a sentence from a dialog box. The sentence has been encrypted as follows: only the first five even-numbered characters should be counted; all other characters should be discarded. Decrypt the sentence and output the result. For example, if the user inputs “Hiejlzl3ow”, your output should be Hello.
+
+68.Write a program that reads a commercial website URL from a dialog box; you should expect that the URL starts with www. and ends with .com. Retrieve the name of the site and output it. For instance, if the user inputs www.yahoo.com, you should output yahoo.
+
+
 ## Chapter 4   Introduction to Applets and Graphics
 
 ## Chapter 5   Flow of Control, Part 1: Selection
