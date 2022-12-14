@@ -11,7 +11,8 @@
 
 2. Which one of these is not an application?
 - [ ] Word
-- [ ] Internet Explorer
+- [ ] Internet Explorer![166_1a](https://user-images.githubusercontent.com/51521033/207513185-878637b4-6ac8-4319-ac3c-aed880ced46f.jpg)
+
 - [x] Linux
 - [ ] Excel
 
@@ -209,6 +210,127 @@ output(sumL, sumG)
 ## Chapter 2   Programming Building Blocks—Java Basics
 
 ## Chapter 3   Object-Oriented Programming, Part 1: Using Classes
+
+### Multiple Choice Exercises
+
+1. If you want to use an existing class from the Java class library in your program, what keyword should you use?
+- [ ] use
+- [x] import
+- [ ] export
+- [ ] include
+
+2. A constructor has the same name as the class name.
+- [x] true
+- [ ] false
+
+3. A given class can have more than one constructor.
+- [x] true
+- [ ] false
+
+4. What is the keyword used to instantiate an object in Java?
+- [ ] make
+- [ ] construct
+- [x] new
+- [ ] static
+
+5. In a given class named Quiz, there can be only one method with the name Quiz.
+- [x] true
+- [ ] false
+
+6. A static method is
+- [x] a class method.
+- [ ] an instance method.
+
+7. In the Quiz class, the foo method has the following API:<br/>
+![164_1a](https://user-images.githubusercontent.com/51521033/207510897-22c743cf-f494-4949-8971-9c8e838d140f.jpg)
+<br/>What can you say about foo?
+- [ ] It is an instance method.
+- [ ] It is a class field.
+- [x] It is a class method.
+- [ ] It is an instance variable.
+
+8. In the Quiz class, the foo method has the following API:<br/>
+![165_1a](https://user-images.githubusercontent.com/51521033/207510951-43a7830a-19ff-47e7-8cbf-948c70400bf1.jpg)
+<br/>How would you call that method?<br/>
+![165_2a](https://user-images.githubusercontent.com/51521033/207510996-8ad92f61-07d0-43a4-80f3-6547ac3c1b10.jpg)
+<br/>Answer: `Quiz.foo();`
+ 
+
+9. In the Quiz class, the foo method has the following API:<br/>
+![165_3a](https://user-images.githubusercontent.com/51521033/207511027-24df2a32-060b-4962-92a0-419acddc1bc2.jpg)
+<br/>How many arguments does foo take?
+- [ ] 0
+- [ ] 1
+- [ ] 2
+- [x] 3
+
+10. In the Quiz class, the foo method has the following API:<br/>
+![165_4a](https://user-images.githubusercontent.com/51521033/207511042-24a0aa84-6bcc-4d2f-9a4b-4948b336899d.jpg)
+<br/>What is the return type of method foo?
+- [x] double
+- [ ] int
+- [ ] char
+- [ ] String
+
+11. String is a primitive data type in Java.
+- [ ] true
+- [x] false
+
+12. Which one of the following is not an existing wrapper class?
+- [ ] Integer
+- [x] Char
+- [ ] Float
+- [ ] Double
+
+13. What is the proper way of accessing the constant E of the Math class?
+- [ ] Math.E( );
+- [x] Math.E;
+- [ ] E;
+- [ ] Math( E );
+
+### Reading and Understanding Code
+
+14. What is the output of this code sequence?<br/>
+![166_1a](https://user-images.githubusercontent.com/51521033/207513301-f5378a8b-89fa-4aef-8afe-e786c020029d.jpg)
+<br/>Answer: HI
+
+15. What is the output of this code sequence?<br/>
+![166_2a](https://user-images.githubusercontent.com/51521033/207513555-8086c248-1603-496e-9c11-e555930060ff.jpg)
+<br/>Answer: ABCDEFGHIJ
+
+16. What is the output of this code sequence?<br/>
+![166_3a](https://user-images.githubusercontent.com/51521033/207513687-878b3e86-1794-40d4-8c92-4f00fdb5e78c.jpg)
+<br/>Answer: hello
+
+
+17. What is the output of this code sequence?<br/>
+![166_4a](https://user-images.githubusercontent.com/51521033/207513884-e42fe447-2acc-4252-9ac8-e89529a3d8d7.jpg)
+<br/>Answer: 5
+
+18. What is the output of this code sequence?<br/>
+![166_5a](https://user-images.githubusercontent.com/51521033/207513907-80790e99-8b98-4b7b-92cd-15a73f08047b.jpg)
+<br/>Answer: 2.0
+
+19. What is the output of this code sequence? (You will need to actually compile this code and run it in order to have the correct output.)<br/>
+![166_6a](https://user-images.githubusercontent.com/51521033/207513987-8195ad63-c1a8-47f3-98ab-09f250eecfb2.jpg)
+<br/>Answer: 3.14159
+
+20. What is the output of this code sequence?<br/>
+![166_7a](https://user-images.githubusercontent.com/51521033/207514048-22184f39-fa26-4b16-8597-fc2bd333866b.jpg)
+<br/>Answer: 6
+
+18. What is the output of this code sequence?<br/>
+![166_5a](https://user-images.githubusercontent.com/51521033/207513907-80790e99-8b98-4b7b-92cd-15a73f08047b.jpg)
+<br/>Answer: 2.0
+
+19. What is the output of this code sequence? (You will need to actually compile this code and run it in order to have the correct output.)<br/>
+![166_6a](https://user-images.githubusercontent.com/51521033/207513987-8195ad63-c1a8-47f3-98ab-09f250eecfb2.jpg)
+<br/>Answer: 3.14159
+
+20. What is the output of this code sequence?<br/>
+![166_7a](https://user-images.githubusercontent.com/51521033/207514048-22184f39-fa26-4b16-8597-fc2bd333866b.jpg)
+<br/>Answer: 6
+
 
 ## Chapter 4   Introduction to Applets and Graphics
 
