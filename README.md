@@ -536,7 +536,7 @@ public class QuadraticEquation {
     }
 }
 ```
-Answer: 
+Answer: In the last case, excepration evaluates to NaN because negative numbers doesn't have real square roots since a square is either positive or 0.
 
 63.Write a program that takes two numbers from the Java console representing, respectively, an investment and an interest rate (you will expect the user to enter a number such as .065 for the interest rate, representing a 6.5% interest rate). Your program should calculate and output (in $ notation) the future value of the investment in 5,10, and 20 years using the following formula:
 
