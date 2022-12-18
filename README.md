@@ -1051,6 +1051,56 @@ public class CourseGrade {
 ```
 
 58. Write a class encapsulating the concept of a course, assuming a course has the following attributes: a code (for instance, CS1), a description, and a number of credits (for instance, 3). Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
+```java
+import java.util.Objects;
+
+public class Course {
+    private String code;
+    private String description;
+    private int creditsNum;
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getCreditsNum() {
+        return creditsNum;
+    }
+
+    public void setCreditsNum(int creditsNum) {
+        this.creditsNum = creditsNum;
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "code='" + code + '\'' +
+                ", description='" + description + '\'' +
+                ", creditsNum=" + creditsNum +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Course)) return false;
+        Course course = (Course) o;
+        return getCreditsNum() == course.getCreditsNum() && getCode().equals(course.getCode()) && getDescription().equals(course.getDescription());
+    }
+}
+```
 
 59. Write a class encapsulating the concept of a student, assuming a student has the following attributes: a name, a social security number, and a GPA (for instance, 3.5). Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
 
