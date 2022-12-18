@@ -948,7 +948,7 @@ public class Team {
     }
     public String toString() {
         if(this.name.trim().compareTo("") == 0)
-            return "Team name isn't setted yet.";
+            return "Team name isn't set yet.";
         return "Team name: " + this.name;
     }
     public boolean equals(Team team) {
@@ -958,6 +958,47 @@ public class Team {
 ```
 
 57. Write a class encapsulating the concept of a television set, assuming a television set has the following attributes: a brand and a price. Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
+```java
+public class TelevisionSet {
+    private String brand;
+    private double price;
+    public TelevisionSet() {
+        this.brand = "";
+        this.price = 0;
+    }
+    public TelevisionSet(String brand, double price) {
+        this.brand = brand;
+        this.price = price;
+    }
+    public String getBrand() {
+        return brand;
+    }
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+    public double getPrice() {
+        return price;
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    @Override
+    public String toString() {
+        return "TelevisionSet{" +
+                "brand='" + brand + '\'' +
+                ", price=" + price +
+                '}';
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TelevisionSet that = (TelevisionSet) o;
+        return Double.compare(that.price, price) == 0 && brand.equals(that.brand);
+    }
+}
+
+```
 
 57. Write a class encapsulating the concept of a course grade, assuming a course grade has the following attributes: a course name and a letter grade. Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
 
