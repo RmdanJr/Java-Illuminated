@@ -614,6 +614,440 @@ class CharNumericValue {
 
 ## Chapter 7   Object-Oriented Programming, Part 2: User-Defined Classes
 
+7.18.1 Multiple Choice Exercises
+
+1. What can you say about the name of a class?
+
+image It must start with an uppercase letter.
+
+image The convention is to start with an uppercase letter.
+
+2. What can you say about the name of constructors?
+
+image They must be the same name as the class name.
+
+image They can be any name, just like other methods.
+
+3. What is a constructor's return type?
+
+image void
+
+image Object
+
+image The class name
+
+image A constructor does not have a return type.
+
+4. It is legal to have more than one constructor in a given class.
+
+image true
+
+image false
+
+5. In a class, if a field is private,
+
+image it can be accessed directly from any class.
+
+image it can be accessed directly only from inside its class.
+
+6. In a typical class, what is the general recommendation for access modifiers?
+
+image Instance variables are private and methods are private.
+
+image Instance variables are private and methods are public.
+
+image Instance variables are public and methods are private.
+
+image Instance variables are public and methods are public.
+
+7. In a class, fields
+
+image can only be basic data types.
+
+image can only be basic data types or existing Java types (from existing classes).
+
+image can be basic data types, existing Java types, or user-defined types (from user-defined classes).
+
+8. Accessors and mutators are
+
+image instance variables of a class.
+
+image used to access and modify field variables of a class from outside the class.
+
+image constructor methods.
+
+9. Accessor methods typically take
+
+image no parameter.
+
+image one parameter, of the same type as the corresponding field.
+
+10. Mutator methods typically take
+
+image no parameter.
+
+image one parameter, of the same type as the corresponding field.
+
+11. Accessor methods typically
+
+image are void methods.
+
+image return the same type as the corresponding field.
+
+12. Mutator methods typically
+
+image are void methods.
+
+image return the same type as the corresponding field.
+
+13. When coding a method that performs calculations on fields of that class,
+
+image these fields must be passed as parameters to the method.
+
+image these fields do not need to be passed as parameters to the methods because the class methods have direct access to them.
+
+14. What is the keyword used for declaring a constant?
+
+image static
+
+image final
+
+image constant
+
+15. What is the keyword used for declaring a class variable or method?
+
+image static
+
+image final
+
+image class
+
+16. What can you say about enum?
+
+image It is part of the package java.lang.
+
+image It can be used for self-documentation, improving the readability of your code.
+
+image An enum object is a constant object.
+
+image All of the above.
+
+7.18.2 Reading and Understanding Code
+
+For Questions 17 and 18, consider that inside the class Sky, we have already coded the following:
+
+image
+
+17. Consider the following method header:
+
+image
+
+Is this method a constructor, mutator, or accessor?
+
+18. Consider the following method header:
+
+image
+
+Is this method a constructor, mutator, or accessor?
+
+For Questions 19 to 24, consider that the class Airplane has two methods with the following method headers; we also have a default constructor already coded.
+
+image
+
+19. What is the return type of method foo1?
+
+20. What is the return type of method foo2?
+
+21. Is method foo1 a class or instance method? Explain.
+
+22. Is method foo2 a class or instance method? Explain.
+
+23. Write a line or two of code to call method foo1 from a client class.
+
+24. Write a line or two of code to call method foo2 from a client class. Assume we have instantiated an object named a1.
+
+25. Inside method main, we see code like
+
+image
+
+From this, reconstruct the header of method foo3 (which belongs to the class Airplane); make appropriate assumptions if necessary.
+
+26. Inside method main, we see code like
+
+image
+
+From this, reconstruct the header of method foo4 (which belongs to class Airplane).
+
+27. If you have defined the following enum constants:
+
+image
+
+What is the output of the following code sequence?
+
+image
+
+7.18.3 Fill In the Code
+
+28. Declare two instance variables grade, which is an integer, and letterGrade, which is a char.
+
+image
+
+29. Declare a class field for a federal tax rate, a constant, with value .07.
+
+image
+
+For Questions 30 to 37, we will assume that class TelevisionChannel has three fields: name, a String; number, an integer; and cable, a boolean, which represents whether the channel is a cable channel.
+
+30. Code a default constructor for that class: initialize the fields to an empty string, 0, and false, respectively.
+
+image
+
+31. Code a constructor for that class that takes three parameters.
+
+image
+
+32. Code the three accessors for that class.
+
+image
+
+33. Code the three mutators for that class.
+
+image
+
+34. Code the toString method.
+
+image
+
+35. Code the equals method.
+
+image
+
+36. Code a method returning the number of digits in the channel number. For instance, if the channel number is 21, the method returns 2; if the channel number is 412, the method returns 3.
+
+image
+
+37. Code a method returning the word cable if the current object represents a cable channel and returning the word network if the current object does not represent a cable channel.
+
+image
+
+7.18.4 Identifying Errors in Code
+
+For Questions 38 to 45, consider that inside the class Gift, we have already coded the following:
+
+image
+
+image
+
+38. We are coding the following inside the class Gift; where is the error?
+
+image
+
+39. We are coding the following inside the class Gift; where is the error?
+
+image
+
+40. We are coding the following inside the class Gift; where is the error?
+
+image
+
+41. We are coding the following inside the class Gift; where is the error?
+
+image
+
+42. We are coding the following inside the class Gift; where is the error?
+
+image
+
+43. We are coding the following inside the class Gift; where is the error?
+
+image
+
+44. We are coding the following in the main method inside the class GiftClient; where is the error?
+
+image
+
+45. We are coding the following in the main method inside the class GiftClient; where is the error?
+
+image
+
+46. Where are the errors in the following statement?
+
+image
+
+7.18.5 Debugging Area—Using Messages from the Java Compilerand Java JVM
+
+For Questions 47 and 48, consider the following class Grade:
+
+image
+
+47. In the main method of the class GradeClient, you have coded
+
+image
+
+When you compile, you get the following message:
+
+image
+
+Explain what the problem is and how to fix it.
+
+48. In the main method of the class GradeClient, you have coded
+
+image
+
+When you compile, you get the following message:
+
+image
+
+Explain what the problem is and how to fix it.
+
+49. You coded the following definition for the class Grade :
+
+image
+
+When you compile, you get the following message:
+
+image
+
+Explain what the problem is and how to fix it.
+
+50. You coded the following definition for the class Grade :
+
+image
+
+image
+
+When you compile, you get the following message:
+
+image
+
+Explain what the problem is and how to fix it.
+
+51. You coded the following definition for the class Grade :
+
+image
+
+When you compile, you get the following message:
+
+image
+
+Explain what the problem is and how to fix it.
+
+52. You coded the following definition for the class Grade :
+
+image
+
+In the main method of the class GradeClient, you have coded:
+
+image
+
+The code compiles properly and runs, but the result is not what you expected.
+
+The client's output is a space, not an A.
+
+Explain what the problem is and how to fix it.
+
+53. You have defined the following enum constants:
+
+image
+
+In the main method of the class Test, you have coded:
+
+image
+
+Explain what the problem is and how to fix it.
+
+54. You have defined the following enum constants:
+
+image
+
+In the main method of the class Test, you have coded
+
+image
+
+When you compile, you get the following message:
+
+image
+
+Explain what the problem is and how to fix it.
+
+7.18.6 Write a Short Program
+
+55. Write a class encapsulating the concept of a team (for example, “Orioles”), assuming a team has only one attribute: the team name. Include a constructor, the accessor and mutator, and methods toString and equals. Write a client class to test all the methods in your class.
+
+56. Write a class encapsulating the concept of a television set, assuming a television set has the following attributes: a brand and a price. Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
+
+57. Write a class encapsulating the concept of a course grade, assuming a course grade has the following attributes: a course name and a letter grade. Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
+
+58. Write a class encapsulating the concept of a course, assuming a course has the following attributes: a code (for instance, CS1), a description, and a number of credits (for instance, 3). Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
+
+59. Write a class encapsulating the concept of a student, assuming a student has the following attributes: a name, a social security number, and a GPA (for instance, 3.5). Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
+
+60. Write a class encapsulating the concept of website statistics, assuming website statistics have the following attributes: number of visitors and type of site (commercial, government, etc.). Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
+
+61. Write a class encapsulating the concept of a corporate name (for example, “IBM”), assuming a corporate name has only one attribute: the corporate name itself. Include a constructor, the accessors and mutators, and methods toString and equals. Also include a method returning a potential domain name by adding www. at the beginning and .com at the end of the corporate name (for instance, if the corporate name is IBM, that method should return www.ibm.com). Write a client class to test all the methods in your class.
+
+62. Write a class encapsulating the concept of a file, assuming a file has only a single attribute: the name of the file. Include a constructor, the accessors and mutators, and methods toString and equals. Also, code a method returning the extension of the file, that is, the letters after the last dot in the file (for instance, if the file name is Test.java, then the method should return java); if there is no dot in the file name, then the method should return “unknown extension.” Write a client class to test all the methods in your class.
+
+7.18.7 Programming Projects
+
+63. Write a class encapsulating the concept of the weather forecast, assuming that it has the following attributes: the temperature and the sky conditions, which could be sunny, snowy, cloudy, or rainy. Include a constructor, the accessors and mutators, and methods toString and equals. Temperature, in Fahrenheit, should be between –50 and + 150; the default value is 70, if needed. The default sky condition is sunny. Include a method that converts Fahrenheit to Celsius. Celsius temperature = (Fahrenheit temperature – 32) * 5 / 9. Also include a method that checks whether the weather attributes are consistent (there are two cases where they are not consistent: when the temperature is below 32 and it is not snowy, and when the temperature is above 100 and it is not sunny). Write a client class to test all the methods in your class.
+
+64. Write a class encapsulating the concept of a domain name, assuming a domain name has a single attribute: the domain name itself (for instance, www.yahoo.com). Include a constructor, the accessors and mutators, and methods toString and equals. Also include the following methods: one returning whether or not the domain name starts with www; another returning the extension of the domain name (i.e., the letters after the last dot, for instance com, gov, or edu; if there is no dot in the domain name, then you should return “unknown’); and another returning the name itself (which will be the characters between www and the extension; for instance, yahoo if the domain is www.yahoo.com—if there are fewer than two dots in the domain name, then your method should return “unknown’). Write a client class to test all the methods in your class.
+
+65. Write a class encapsulating the concept of an HTML page, assuming an HTML statement has only a single attribute: the HTML code for the page. Include a constructor, the accessors and mutators, and methods toString and equals. Include the following methods: one checking that there is a > character following each < character, one counting how many images are on the page (i.e., the number of IMG tags), and one counting how many links are on the page (i.e., the number of times we have “A HREF”). Write a client class to test all the methods in your class.
+
+66. Write a class encapsulating the concept of coins, assuming that coins have the following attributes: a number of quarters, a number of dimes, a number of nickels, and a number of pennies. Include a constructor, the accessors and mutators, and methods toString and equals.Also code the following methods: one returning the total amount of money in dollar notation with two significant digits after the decimal point, and others returning the money in quarters (for instance, 0.75 if there are three quarters), in dimes, in nickels, and in pennies. Write a client class to test all the methods in your class.
+
+67. Write a class encapsulating the concept of a user-defined double,assuming a user-defined double has only a single attribute: a double. Include a constructor, the accessor and mutator, and methods toString and equals. Add a method, taking one parameter specifying how many significant digits we want to have, and returning a doublerepresenting the original double truncated so that it includes the specified number of significant digits after the decimal point (for instance, if the original double is 6.9872 and the argument of the method is 2, this method will return 6.98). Write a client class to test all the methods in your class.
+
+68. Write a class encapsulating the concept of a circle, assuming a circle has the following attributes: a Point representing the center of the circle, and the radius of the circle, an integer. Include a constructor, the accessors and mutators, and methods toString and equals. Also include methods returning the perimeter (2 * π * radius) and area (π * radius2) of the circle. Write a client class to test all the methods in your class.
+
+69. Write a class encapsulating the concept of a rational number, assuming a rational number has the following attributes: an integer representing the numerator of the rational number, and another integer representing the denominator of the rational number. Include a constructor, the accessors and mutators, and methods toString and equals.You should not allow the denominator to be equal to 0; you should give it the default value 1 in case the corresponding argument of the constructor or a method is 0. Also include methods performing multiplication of a rational number by another and addition of a rational number to another, returning the resulting rational number in both cases. Write a client class to test all the methods in your class.
+
+70. Write a class encapsulating the concept of an investment, assuming the investment has the following attributes: the amount of the investment, and the interest rate at which the investment will be compounded. Include a constructor, the accessors and mutators, and methods toString and equals. Also include a method returning the future value of the investment depending on how many years we hold it before selling it, which can be calculated using the formula:
+
+image
+
+We will assume that the interest rate is compounded annually. Write a client class to test all the methods in your class.
+
+71. Write a class encapsulating the concept of a telephone number, assuming a telephone number has only a single attribute: a String representing the telephone number. Include a constructor, the accessor and mutator, and methods toString and equals. Also include methods returning the area code (the first three digits/characters of the phone number; if there are fewer than three characters in the phone number or if the first three characters are not digits, then this method should return “unknown area code”). Write a client class to test all the methods in your class.
+
+7.18.8 Technical Writing
+
+72. An advantage of object-oriented programming is code reuse, not just by the programmer who wrote the class, but by other programmers. Describe the importance of proper documentation and how you would document a class so that other programmers can use it easily.
+
+73. Java has a number of naming conventions for classes, methods, and field variables. Is this important? Why is it good to respect these conventions?
+
+7.18.9 Group Project (for a group of 1, 2, or 3 students)
+
+74. Write a program that solves a quadratic equation in all cases, including when both roots are complex numbers. For this, you need to set up the following classes:
+
+Complex, which encapsulates a complex number
+
+ComplexPair, which encapsulates a pair of complex numbers
+
+Quadratic, which encapsulates a quadratic equation
+
+SolveEquation, which contains the main method
+
+Along with the usual constructors, accessors, and mutators, you will need to code additional methods:
+
+In the Complex class, a method that determines whether a complex object is real
+
+In the ComplexPair class, a method that determines whether both complex numbers are identical
+
+In the Quadratic class, a method to solve the quadratic equation and return a ComplexPair object
+
+Additionally, you need to include code in the main method to solve several examples of quadratic equations input from the keyboard. Your output should make comments as to what type of roots we get (double real root, distinct real roots, distinct complex roots). You should check that your code works in all four basic cases:
+
+image The quadratic equation is actually a linear equation.
+
+image Both roots are complex.
+
+image There is a double real root.
+
+image There are two distinct real roots.
+
 ## Chapter 8   Single-Dimensional Arrays
 
 ## Chapter 9   Multidimensional Arrays and the ArrayList Class
