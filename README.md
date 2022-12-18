@@ -1052,8 +1052,6 @@ public class CourseGrade {
 
 58. Write a class encapsulating the concept of a course, assuming a course has the following attributes: a code (for instance, CS1), a description, and a number of credits (for instance, 3). Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
 ```java
-import java.util.Objects;
-
 public class Course {
     private String code;
     private String description;
@@ -1097,7 +1095,9 @@ public class Course {
         if (this == o) return true;
         if (!(o instanceof Course)) return false;
         Course course = (Course) o;
-        return getCreditsNum() == course.getCreditsNum() && getCode().equals(course.getCode()) && getDescription().equals(course.getDescription());
+        return getCreditsNum() == course.getCreditsNum()
+               && getCode().equals(course.getCode())
+               && getDescription().equals(course.getDescription());
     }
 }
 ```
