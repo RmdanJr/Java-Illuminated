@@ -587,7 +587,17 @@ class PointsManipulation {
 ```
 
 65.Write a program that reads a char from the Java console. Look up the Character class on the Web, in particular the method getNumeric-Value. Using the getNumericValue method, find the corresponding Unicode encoding number and output the character along with its corresponding Unicode value. Find all the Unicode values for characters a to z and A to Z.
+```java
+import java.util.Scanner;
 
+class CharNumericValue {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        char c = in.next().charAt(0);
+        System.out.printf("Numeric value of %c is %d.", c, Character.getNumericValue(c));
+    }
+}
+```
 
 66.Write a program that reads a telephone number from a dialog box; you should assume that the number is in this format: nnn-nnn-nnnn. You should output this same telephone number but with spaces instead of dashes, that is: nnn nnn nnnn.
 
