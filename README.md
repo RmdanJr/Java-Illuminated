@@ -997,10 +997,58 @@ public class TelevisionSet {
         return Double.compare(that.price, price) == 0 && brand.equals(that.brand);
     }
 }
-
 ```
 
 57. Write a class encapsulating the concept of a course grade, assuming a course grade has the following attributes: a course name and a letter grade. Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
+```java
+public class CourseGrade {
+    private String courseName;
+    private char letterGrade;
+
+    public CourseGrade() {
+        this.courseName = "";
+        this.letterGrade = '\0';
+    }
+
+    public CourseGrade(String courseName, char letterGrade) {
+        this.courseName = courseName;
+        this.letterGrade = letterGrade;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public char getLetterGrade() {
+        return letterGrade;
+    }
+
+    public void setLetterGrade(char letterGrade) {
+        this.letterGrade = letterGrade;
+    }
+
+    @Override
+    public String toString() {
+        return "CourseGrade{" +
+                "courseName='" + courseName + '\'' +
+                ", letterGrade=" + letterGrade +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CourseGrade that = (CourseGrade) o;
+        return letterGrade == that.letterGrade && courseName.equals(that.courseName);
+    }
+}
+
+```
 
 58. Write a class encapsulating the concept of a course, assuming a course has the following attributes: a code (for instance, CS1), a description, and a number of credits (for instance, 3). Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
 
