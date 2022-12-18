@@ -614,123 +614,123 @@ class CharNumericValue {
 
 ## Chapter 7   Object-Oriented Programming, Part 2: User-Defined Classes
 
-7.18.1 Multiple Choice Exercises
+### Multiple Choice Exercises
 
 1. What can you say about the name of a class?
 
-image It must start with an uppercase letter.
+- [ ] It must start with an uppercase letter.
 
-image The convention is to start with an uppercase letter.
+- [x] The convention is to start with an uppercase letter.
 
 2. What can you say about the name of constructors?
 
-image They must be the same name as the class name.
+- [x] They must be the same name as the class name.
 
-image They can be any name, just like other methods.
+- [ ] They can be any name, just like other methods.
 
 3. What is a constructor's return type?
 
-image void
+- [ ] void
 
-image Object
+- [ ] Object
 
-image The class name
+- [ ] The class name
 
-image A constructor does not have a return type.
+- [x] A constructor does not have a return type.
 
 4. It is legal to have more than one constructor in a given class.
 
-image true
+- [x] true
 
-image false
+- [ ] false
 
 5. In a class, if a field is private,
 
-image it can be accessed directly from any class.
+- [ ] it can be accessed directly from any class.
 
-image it can be accessed directly only from inside its class.
+- [x] it can be accessed directly only from inside its class.
 
 6. In a typical class, what is the general recommendation for access modifiers?
 
-image Instance variables are private and methods are private.
+- [ ] Instance variables are private and methods are private.
 
-image Instance variables are private and methods are public.
+- [x] Instance variables are private and methods are public.
 
-image Instance variables are public and methods are private.
+- [ ] Instance variables are public and methods are private.
 
-image Instance variables are public and methods are public.
+- [ ] Instance variables are public and methods are public.
 
 7. In a class, fields
 
-image can only be basic data types.
+- [ ] can only be basic data types.
 
-image can only be basic data types or existing Java types (from existing classes).
+- [ ] can only be basic data types or existing Java types (from existing classes).
 
-image can be basic data types, existing Java types, or user-defined types (from user-defined classes).
+- [x] can be basic data types, existing Java types, or user-defined types (from user-defined classes).
 
 8. Accessors and mutators are
 
-image instance variables of a class.
+- [ ] instance variables of a class.
 
-image used to access and modify field variables of a class from outside the class.
+- [x] used to access and modify field variables of a class from outside the class.
 
-image constructor methods.
+- [ ] constructor methods.
 
 9. Accessor methods typically take
 
-image no parameter.
+- [x] no parameter.
 
-image one parameter, of the same type as the corresponding field.
+- [ ] one parameter, of the same type as the corresponding field.
 
 10. Mutator methods typically take
 
-image no parameter.
+- [ ] no parameter.
 
-image one parameter, of the same type as the corresponding field.
+- [x] one parameter, of the same type as the corresponding field.
 
 11. Accessor methods typically
 
-image are void methods.
+- [ ] are void methods.
 
-image return the same type as the corresponding field.
+- [x] return the same type as the corresponding field.
 
 12. Mutator methods typically
 
-image are void methods.
+- [x] are void methods.
 
-image return the same type as the corresponding field.
+- [ ] return the same type as the corresponding field.
 
 13. When coding a method that performs calculations on fields of that class,
 
-image these fields must be passed as parameters to the method.
+- [ ] these fields must be passed as parameters to the method.
 
-image these fields do not need to be passed as parameters to the methods because the class methods have direct access to them.
+- [x] these fields do not need to be passed as parameters to the methods because the class methods have direct access to them.
 
 14. What is the keyword used for declaring a constant?
 
-image static
+- [ ] static
 
-image final
+- [x] final
 
-image constant
+- [ ] constant
 
 15. What is the keyword used for declaring a class variable or method?
 
-image static
+- [x] static
 
-image final
+- [ ] final
 
-image class
+- [ ] class
 
 16. What can you say about enum?
 
-image It is part of the package java.lang.
+- [ ] It is part of the package java.lang.
 
-image It can be used for self-documentation, improving the readability of your code.
+- [ ] It can be used for self-documentation, improving the readability of your code.
 
-image An enum object is a constant object.
+- [ ] An enum object is a constant object.
 
-image All of the above.
+- [x] All of the above.
 
 7.18.2 Reading and Understanding Code
 
