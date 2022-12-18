@@ -543,6 +543,29 @@ Answer: In the last case, excepration evaluates to NaN because negative numbers 
 future value = investment * ( 1 + interest rate )year
 
 We will assume that the interest rate is an annual rate and is compounded annually.
+```java
+import java.util.Scanner;
+
+class FutureValueCalc {
+    public static void main(String[] args) {
+        double futureVal5Years = 0, futureVal10Years = 0, futureVal20Years = 0;
+        Scanner in = new Scanner(System.in);
+        double investment = in.nextDouble();
+        double interestRate = in.nextDouble();
+        double currentValue = investment;
+        for(int yrs = 1; yrs <= 20; yrs++) {
+            currentValue = (1 + interestRate) * currentValue;
+            if(yrs == 5)
+                futureVal5Years = currentValue;
+            else if(yrs == 10)
+                futureVal10Years = currentValue;
+            else if(yrs == 20)
+                futureVal20Years = currentValue;
+        }
+        System.out.printf("Future value after 5 years: %.2f, after 10 years: %.2f, and after 20 years: %.2f.", futureVal5Years, futureVal10Years, futureVal20Years);
+    }
+}
+```
 
 64.Write a program that reads from the Java console the (x,y) coordinates for two points in the plane. You can assume that all numbers are integers. Using the Point class from Java (you may need to look it up on the Web), instantiate two Point objects with your input data, then output the data for both Point objects.
 
