@@ -568,6 +568,23 @@ class FutureValueCalc {
 ```
 
 64.Write a program that reads from the Java console the (x,y) coordinates for two points in the plane. You can assume that all numbers are integers. Using the Point class from Java (you may need to look it up on the Web), instantiate two Point objects with your input data, then output the data for both Point objects.
+```java
+import java.util.Scanner;
+import java.awt.Point;
+
+class PointsManipulation {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int x1 = in.nextInt();
+        int y1 = in.nextInt();
+        Point p1 = new Point(x1, y1);
+        int x2 = in.nextInt();
+        int y2 = in.nextInt();
+        Point p2 = new Point(x2, y2);
+        System.out.printf("Point 1: %s%nPoint 2: %s.", p1.toString(), p2.toString());
+    }
+}
+```
 
 65.Write a program that reads a char from the Java console. Look up the Character class on the Web, in particular the method getNumeric-Value. Using the getNumericValue method, find the corresponding Unicode encoding number and output the character along with its corresponding Unicode value. Find all the Unicode values for characters a to z and A to Z.
 
