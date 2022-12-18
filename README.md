@@ -617,122 +617,80 @@ class CharNumericValue {
 ### Multiple Choice Exercises
 
 1. What can you say about the name of a class?
-
 - [ ] It must start with an uppercase letter.
-
 - [x] The convention is to start with an uppercase letter.
 
 2. What can you say about the name of constructors?
-
 - [x] They must be the same name as the class name.
-
 - [ ] They can be any name, just like other methods.
 
 3. What is a constructor's return type?
-
 - [ ] void
-
 - [ ] Object
-
 - [ ] The class name
-
 - [x] A constructor does not have a return type.
 
 4. It is legal to have more than one constructor in a given class.
-
 - [x] true
-
 - [ ] false
 
 5. In a class, if a field is private,
-
 - [ ] it can be accessed directly from any class.
-
 - [x] it can be accessed directly only from inside its class.
 
 6. In a typical class, what is the general recommendation for access modifiers?
-
 - [ ] Instance variables are private and methods are private.
-
 - [x] Instance variables are private and methods are public.
-
 - [ ] Instance variables are public and methods are private.
-
 - [ ] Instance variables are public and methods are public.
 
 7. In a class, fields
-
 - [ ] can only be basic data types.
-
 - [ ] can only be basic data types or existing Java types (from existing classes).
-
 - [x] can be basic data types, existing Java types, or user-defined types (from user-defined classes).
 
 8. Accessors and mutators are
-
 - [ ] instance variables of a class.
-
 - [x] used to access and modify field variables of a class from outside the class.
-
 - [ ] constructor methods.
 
 9. Accessor methods typically take
-
 - [x] no parameter.
-
 - [ ] one parameter, of the same type as the corresponding field.
 
 10. Mutator methods typically take
-
 - [ ] no parameter.
-
 - [x] one parameter, of the same type as the corresponding field.
 
 11. Accessor methods typically
-
 - [ ] are void methods.
-
 - [x] return the same type as the corresponding field.
 
 12. Mutator methods typically
-
 - [x] are void methods.
-
 - [ ] return the same type as the corresponding field.
 
 13. When coding a method that performs calculations on fields of that class,
-
 - [ ] these fields must be passed as parameters to the method.
-
 - [x] these fields do not need to be passed as parameters to the methods because the class methods have direct access to them.
 
 14. What is the keyword used for declaring a constant?
-
 - [ ] static
-
 - [x] final
-
 - [ ] constant
 
 15. What is the keyword used for declaring a class variable or method?
-
 - [x] static
-
 - [ ] final
-
 - [ ] class
 
 16. What can you say about enum?
-
 - [ ] It is part of the package java.lang.
-
 - [ ] It can be used for self-documentation, improving the readability of your code.
-
 - [ ] An enum object is a constant object.
-
 - [x] All of the above.
 
-7.18.2 Reading and Understanding Code
+### Reading and Understanding Code
 
 For Questions 17 and 18, consider that inside the class Sky, we have already coded the following:
 
@@ -786,7 +744,7 @@ What is the output of the following code sequence?
 
 image
 
-7.18.3 Fill In the Code
+### Fill In the Code
 
 28. Declare two instance variables grade, which is an integer, and letterGrade, which is a char.
 
@@ -970,11 +928,36 @@ image
 
 Explain what the problem is and how to fix it.
 
-7.18.6 Write a Short Program
+### Write a Short Program
 
 55. Write a class encapsulating the concept of a team (for example, “Orioles”), assuming a team has only one attribute: the team name. Include a constructor, the accessor and mutator, and methods toString and equals. Write a client class to test all the methods in your class.
+```java
+public class Team {
+    private String name;
+    public Team() {
+        this.name = "";
+    }
+    public Team(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return this.name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String toString() {
+        if(this.name.trim().compareTo("") == 0)
+            return "Team name isn't setted yet.";
+        return "Team name: " + this.name;
+    }
+    public boolean equals(Team team) {
+        return team.name == this.name; 
+    }
+}
+```
 
-56. Write a class encapsulating the concept of a television set, assuming a television set has the following attributes: a brand and a price. Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
+57. Write a class encapsulating the concept of a television set, assuming a television set has the following attributes: a brand and a price. Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
 
 57. Write a class encapsulating the concept of a course grade, assuming a course grade has the following attributes: a course name and a letter grade. Include a constructor, the accessors and mutators, and methods toString and equals. Write a client class to test all the methods in your class.
 
